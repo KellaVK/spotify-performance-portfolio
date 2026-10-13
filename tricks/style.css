@@ -1,0 +1,252 @@
+/* CSS files add styling rules to your content */
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-style: italic;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h3 {
+  font-size: 23px;
+  text-decoration: super;
+  text-decoration: underline;
+}
+
+h2 {
+  color: black;
+  width: 13%;
+  border-style: hidden;
+  background-color: white;
+  background-origin: content-box;
+  font-size: 25px;
+}
+
+a:link {
+  color: white;
+  background-color: black;
+  text-decoration: underline;
+  font-size: 16px;
+}
+a:visited {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: white;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+mark {
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  border-right-style: solid;
+}
+
+li a:hover {
+  background-color: white;
+}
+
+table,
+th,
+td {
+  border: 2px solid white;
+  border-collapse: collapse;
+  padding: 11px;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+nav {
+  border-style: outset;
+  border-collapse: collapse;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  color: white;
+  display: block;
+  background-color: black;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  border-style: black;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: white;
+  color: black;
+}
+/*dropdown menu */
+.Jdropbtn {
+  border-style: solid;
+  border-radius: 3px;
+  padding: 16px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+}
+
+.Jdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Jdropdown-content {
+  display: none;
+  position: inline-block;
+  min-width: 160px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+
+.Jdropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: black;
+  color: white;
+}
+
+.Jdropdown-content a:hover {
+  background-color: white;
+  color: black;
+  border-style: double;
+}
+
+.Jdropdown:hover .Jdropdown-content {
+  display: block;
+}
+
+.Jdropdown:hover .Jdropbtn {
+  background-color: black;
+}
+
+/*dropdown menu */
+.Cdropbtn {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: black;
+  font-style: italic;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  border-right-style: solid;
+}
+
+.Cdropdown {
+  position: fixed;
+  display: inline-block;
+}
+
+.Cdropdown-content {
+  display: none;
+  position: absolute;
+  border-style: solid;
+  border-width: 1px;
+  top: 52px;
+  left: 0;
+  z-index: 1;
+  overflow: auto;
+}
+
+.dropDownSection {
+  border-bottom-style: solid;
+  border-width: 1px;
+}
+
+.Cdropdown-content a {
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.Cdropdown-content a:hover {
+  background-color: white;
+  color: black;
+  border-style: double;
+}
+
+.Cdropdown:hover .Cdropdown-content {
+  display: block;
+}
+
+.Cdropdown:hover .Cdropbtn {
+  background-color: white;
+  color: black;
+}
+
+img {
+  width: 185px;
+  height: 300px;
+  border-style: hidden;
+  border-radius: 15px;
+}
+
+.button1 {
+  border: none;
+  width: 100%;
+  height: 12vh;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 40px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="config.local.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Spotify Scanner</title>
+  <link rel="manifest" href="/tricks/spotifyappmanifest.json" />
+  <link rel="stylesheet" href="/tricks/spotifyappstyle.css" />
+</head>
+<body>
+  <div id="camera-container">
+    <video id="background-video" autoplay playsinline muted></video>
+  </div>
+
+  <div class="overlay">
+    <div class="mask-layer"></div>
+    <button class="close-button">✕</button>
+    <div class="scan-window"></div>
+    <div class="dots-indicator">
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+      <div class="dot"></div><div class="dot"></div><div class="dot"></div>
+    </div>
+    <p class="instruction-text">Point your camera at a Spotify code.</p>
+    <input type="text" id="input-box" placeholder="Select from photos" />
+    <p id="result"></p>
+  </div>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/tricks/service-worker.js")
+        .then((r) => console.log("Service Worker registered with scope:", r.scope))
+        .catch((e) => console.error("Service Worker registration failed:", e));
+    }
+  </script>
+
+  <!-- Your app (ES module) -->
+  <script type="module" src="/tricks/spotifyapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "spotify-performance-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.cjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
